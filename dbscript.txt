@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "product_name": "Xiaomi",
+        "available_quantity": "123",
+        "price": "123"
+    },
+    {
+        "id": "2",
+        "product_name": "Iphone 12 pro max",
+        "available_quantity": "45",
+        "price": "45"
+    },
+    {
+        "id": "3",
+        "product_name": "Iphone 4s",
+        "available_quantity": "1",
+        "price": "23"
+    },
+    {
+        "id": "4",
+        "product_name": "Iphone 13",
+        "available_quantity": "1",
+        "price": "79000"
+    }
+]

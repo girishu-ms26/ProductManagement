@@ -17,6 +17,6 @@ public class Product {
     @Id
     private String id;
     private String product_name;
-    private String available_quantity;
-    private String price;
+    private int available_quantity;
+    private long price;
 }

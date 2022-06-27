@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class ProductManagementController {
+public class ProductController {
 
     @Autowired
     private ProductService productService;

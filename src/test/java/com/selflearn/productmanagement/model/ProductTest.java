@@ -11,9 +11,9 @@ public class ProductTest {
 
     @Test
     public void productIdTest() {
-        product.setId("1");
-        assertThat(product.getId()).isEqualTo("1");
-        assertThat(p1.getId()).isEqualTo("1");
+        product.set_id("1");
+        assertThat(product.get_id()).isEqualTo("1");
+        assertThat(p1.get_id()).isEqualTo("1");
     }
 
     @Test

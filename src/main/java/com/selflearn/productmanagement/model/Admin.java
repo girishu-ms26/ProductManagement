@@ -18,4 +18,5 @@ public class Admin {
     private String Id;
     private String admin_email;
     private String admin_password;
+    private Boolean admin_authentication_status;
 }

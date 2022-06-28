@@ -2,10 +2,10 @@ package com.selflearn.productmanagement.controller;
 
 import com.selflearn.productmanagement.model.Admin;
 import com.selflearn.productmanagement.service.AdminService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
@@ -17,13 +17,18 @@ public class AdminController {
         this.adminService = adminService;
     }
 
-    @PostMapping("/register")
+    @GetMapping("/getAdmins")
+    public List<Admin> getAllAdmins(){
+        return adminService.getAllAdmins();
+    }
+
+    @PostMapping("/adminRegister")
     public ResponseEntity adminRegister(@RequestBody Admin newAdmin){
         return adminService.adminRegister(newAdmin);
     }
 
-    @PostMapping
+    @PostMapping("/adminSignin")
     public ResponseEntity adminSignIn(@RequestBody Admin admin){
-        return new ResponseEntity<Admin>(HttpStatus.ACCEPTED);
+        return adminService.adminSignIn(admin);
     }
 }

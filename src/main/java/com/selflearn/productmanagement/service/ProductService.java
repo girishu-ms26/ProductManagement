@@ -2,9 +2,7 @@ package com.selflearn.productmanagement.service;
 
 import com.selflearn.productmanagement.model.Product;
 import com.selflearn.productmanagement.repository.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +10,11 @@ import java.util.Optional;
 @Service
 public class ProductService {
 
-    @Autowired
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
+
+    public ProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     public List<Product> getAllProductsList() {
         return productRepository.findAll();

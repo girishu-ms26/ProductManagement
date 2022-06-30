@@ -15,7 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Admin {
 
     @Id
-    private String Id;
+    private String _Id;
     private String admin_email;
     private String admin_password;
 }

@@ -15,8 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
 
     @Id
-    private String Id;
+    private String _Id;
     private String user_email;
     private String user_password;
-    private Boolean user_authentication_status;
 }

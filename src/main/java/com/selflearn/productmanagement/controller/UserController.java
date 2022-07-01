@@ -1,6 +1,5 @@
 package com.selflearn.productmanagement.controller;
 
-import com.selflearn.productmanagement.model.Admin;
 import com.selflearn.productmanagement.model.User;
 import com.selflearn.productmanagement.service.UserService;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
 
     private final UserService userService;
